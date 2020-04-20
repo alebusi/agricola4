@@ -1,29 +1,26 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=800px, user-scalable=no">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Agricola</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="pagestyle" rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 <div
-   class="wrapper">
-  <table id="t00">
-  <tr>
-      <td><div id="legno" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="argilla" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="pietra" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="canna" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="cibo" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-  </tr>
-  <tr><td><div id="grano" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="ortaggio" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="pecora" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="cinghiale" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-      <td><div id="bestiame" class="risorsa" onclick="selezionaRisorsa(this)">-</div></td>
-  </tr>
-</table>
+   class="wrapper">  
+     <div id="legno" class="trasparente" onclick="myfunc('legno', 1, 0)">0</div>
+     <div id="argilla" class="trasparente" onclick="myfunc('argilla', 1, 1)">0</div>   
+     <div id="canna" class="trasparente" onclick="myfunc('canna', 1, 2)">0</div>
+     <div id="pietra" class="trasparente" onclick="myfunc('pietra', 1, 3)">0</div>
+     <div id="grano" class="trasparente" onclick="myfunc('grano', 1, 4)">0</div> 
+     <div id="ortaggio" class="trasparente" onclick="myfunc('ortaggio', 1, 5)">0</div> 
+     <div id="cibo" class="risorsa" onclick="myfunc('cibo', 1, 6)">0</div>    
+     <div id="pecora" class="trasparente" onclick="myfunc('pecora', 1, 7)">0</div>
+     <div id="cinghiale" class="trasparente" onclick="myfunc('cinghiale', 1, 8)">0</div>
+     <div id="bestiame" class="trasparente" onclick="myfunc('bestiame', 1, 9)">0</div>
+     <div class="zero" onclick="myfunc3(this)"></div>
 </div>
 <div class="tabellone">
  <table id="t01" style="margin-left:auto; margin-right:auto;">
@@ -116,17 +113,8 @@
     </tr>
   </table>
  </div>
- <div class="tastiera">
-   <div class="tasto" onclick="aggiornaRisorsa(-1)">-1</div>
-   <div class="tasto" onclick="aggiornaRisorsa(+1)">+1</div>
-   <div class="tasto" onclick="aggiornaRisorsa(0)">0</div>
-   <div id="bianco" class="tasto">
-     <div id="controllo" class="standard" onclick="mySwitch(this)">.</div>
-   </div>
- </div>
- <div class="carte">
-  <iframe width=1500 height=1500 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFxjjvVvcdzLD3WJdZ2EDfcBGhFbeT7Lz4jT3IYCWqVcvPnWoR0AvvluOHKaJ-fevKrCzUdzk19UuZ/pubhtml?gid=0&amp;single=true&amp;range=a1:c7&amp;widget=false&amp;headers=false&amp;chrome=false"></iframe>
- </div>
- <script src="counter.js"></script>
+ <div id="controllo" class="standard" onclick="mySwitch(this)"></div>
+  <div style="width: 99vw; height: 20vh"></div>
+   <script src="risorse.js"></script>
 </body>
 </html>
