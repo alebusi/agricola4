@@ -1,84 +1,85 @@
-var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var cambio = 0;
+var secondi = 0;
 var audioCampo = new Audio('campo.mp3');
+var suona = new Audio('success.wav');
+var audioTogli = new Audio('togli.mp3');
 
-var audioTogliRisorsa = new Audio('togli.mp3');
-var audioAggiungiRisorsa = new Audio('success.wav');
+function myfunc(id,i,ind) {
+  if (cambio == 0)
+    {
+    document.getElementById(id).className = "trasparente";
+    tess[ind]=0;
+    document.getElementById(id).innerHTML = tess[ind];
+    audioTogli.play();
+    }
+  else if (cambio == 1)
+    {
+    document.getElementById(id).className = "risorsa";
+    tess[ind]+=1;
+    document.getElementById(id).innerHTML = tess[ind];
+    suona.play();
+    }
+  else
+    {
+    document.getElementById(id).className = "risorsa";
+    tess[ind]=0;
+    document.getElementById(id).innerHTML = tess[ind];
+    }
+}
 
-var audioPecora = new Audio('pecora.mp3');
-var audioCinghiale = new Audio('cinghiale.mp3');
-var audioBestiame = new Audio('bestiame.mp3');
+function myfunc3(div) {
+  cambio+=1;
+  if ( cambio > 1 )
+    {
+    cambio = 0;
+    }
+  switch(cambio) {
+    case 0:
+        div.className = "zero";
+        break;
+    case 1:
+        div.className = "uno";
+        break;
+  }
+  suona.play();
+}
 
-function selezionaRisorsa(div) {
+function CambiaStile(sheet) {
+        if (document.getElementById('pagestyle').getAttribute('href')=="style.css") {
+           document.getElementById('pagestyle').setAttribute("href",sheet);
+        }
+        else {
+           document.getElementById('pagestyle').setAttribute("href","style.css");
+        }
+}
+
+function mySwitch(div) {
   var className = div.getAttribute("class");
-  var x = document.getElementsByClassName("risorsa_sel");
-  if (x.length > 0) {
-     x[0].className = "risorsa";
-  }
-  if (className=="risorsa") {
-      div.className = "risorsa_sel";
-       }
-  else if (className == "risorsa_sel") {
-       div.className = "risorsa";
-       }
-  campoAudio.play();
+  if (className=="standard") {
+    div.className = "steccati";
+    }
+  else if (className=="steccati") {
+    div.className = "edilizia";
+    }
+  else if (className=="edilizia") {
+    div.className = "standard";
+    }
+  audioCampo.play();
 }
 
-function aggiornaRisorsa(numero) {
-  var x = document.getElementsByClassName("risorsa_sel");
-  if (x.length > 0) {
-    if (x[0].innerHTML == "-" || numero == "0") {
-      k=0;
+function mysel(div) {
+  var className = div.getAttribute("class");
+  if (document.getElementById("controllo").className=="steccati") {
+    if (className=="largo") {
+       div.className = "largo_nero";
+       }
+    else if (className=="largo_nero") {
+       div.className = "largo";
+       }
+    audioCampo.play();
     }
-    else {
-      k=parseInt(x[0].innerHTML);
-    }
-    k+=numero;
-    if (k === 0) {
-      x[0].innerHTML = "-";
-    }
-    else {
-      x[0].innerHTML=k;
-    }
-    if (numero > 0) {
-      audioAggiungiRisorsa.play();
-    }
-    else {
-      audioTogliRisorsa.play();
-    }
-  }
 }
-
-function OldaggRisorse(id,i,ind) {
-  var x = document.getElementsByClassName("example");
-  tess[ind]+=i;
-  v=tess[ind];
-  if (v === 0) {
-    document.getElementById(id).innerHTML = "-";
-  }
-  else { 
-    document.getElementById(id).innerHTML = v;
-  }
-  if (i == 1) {
-    if ( id == "pecora" ) {
-       var aumenta = new Audio('pecora.mp3');
-       }
-    else if ( id == "cinghiale" ) {
-       var aumenta = new Audio('cinghiale.mp3');
-       }
-    else if ( id == "bestiame" ) {
-       var aumenta = new Audio('mucca.mp3');
-       }
-    else {
-       var aumenta = new Audio('success.wav');
-       }
-    aumenta.play();
-    }
-  else {
-    var decrementa = new Audio('togli.mp3');
-    decrementa.play();
-    }
-  }
-
 function myfunc2(div) {
   var className = div.getAttribute("class");
   if (document.getElementById("controllo").className=="standard") { 
@@ -121,32 +122,5 @@ function myfunc2(div) {
       div.className = "spazio";
       }
   }
-  audioCampo.play();
-}
-
-function mysel(div) {
-  var className = div.getAttribute("class");
-  if (document.getElementById("controllo").className=="steccati") {
-    if (className=="largo") {
-       div.className = "largo_nero";
-       }
-    else if (className=="largo_nero") {
-       div.className = "largo";
-       }
-    audioCampo.play();
-    }
-}
-
-function mySwitch(div) {
-  var className = div.getAttribute("class");
-  if (className=="standard") {
-    div.className = "steccati";
-    }
-  else if (className=="steccati") {
-    div.className = "edilizia";
-    }
-  else if (className=="edilizia") {
-    div.className = "standard";
-    }
   audioCampo.play();
 }
