@@ -63,18 +63,22 @@ body {
     color: cyan;
 }
 
-.zero {
+#buttonRisorsa {
     width: 5vw;
     height: 5vw;
-    margin-left: 85vw;
-    background-color: #ffffff;
+    margin-left: 85vw;  
 }
 
-.uno {
-    width: 5vw;
-    height: 5vw;
-    margin-left: 85vw;
-    background-color: yellow;
+.zero {
+    background-color: white;
+}
+
+.somma {
+    background-color: orange;
+}
+
+.sottrai {
+    background-color: red;
 }
 
 .tabellone {
