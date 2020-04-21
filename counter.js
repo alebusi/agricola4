@@ -1,48 +1,45 @@
 var tess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-var cambio = 0;
+//var cambio = 0;
 var secondi = 0;
-var audioCampo = new Audio('campo.mp3');
-var suona = new Audio('success.wav');
-var audioTogli = new Audio('togli.mp3');
+//var audioCampo = new Audio('campo.mp3');
+//var suona = new Audio('success.wav');
+//var audioTogli = new Audio('togli.mp3');
 
 function myfunc(id,i,ind) {
-  if (cambio == 0)
+  if (document.getElementById("buttonRisorsa").className == "zero")
     {
     document.getElementById(id).className = "trasparente";
     tess[ind]=0;
     document.getElementById(id).innerHTML = tess[ind];
-    audioTogli.play();
+    //audioTogli.play();
     }
-  else if (cambio == 1)
+  else if (document.getElementById("buttonRisorsa").className == "somma")
     {
     document.getElementById(id).className = "risorsa";
     tess[ind]+=1;
     document.getElementById(id).innerHTML = tess[ind];
-    suona.play();
+    //suona.play();
     }
-  else
+  else if (document.getElementById("buttonRisorsa").className == "sottrai")
     {
     document.getElementById(id).className = "risorsa";
-    tess[ind]=0;
+    tess[ind]-=1;
     document.getElementById(id).innerHTML = tess[ind];
+    //suona.play();
     }
 }
 
-function myfunc3(div) {
-  cambio+=1;
-  if ( cambio > 1 )
-    {
-    cambio = 0;
+function btAggRisorsa(div) {
+  var className = div.getAttribute("class");
+  if (className=="zero") {
+    div.className = "somma";
     }
-  switch(cambio) {
-    case 0:
-        div.className = "zero";
-        break;
-    case 1:
-        div.className = "uno";
-        break;
-  }
-  suona.play();
+  else if (className=="somma") {
+    div.className = "sottrai";
+    }
+  else if (className=="sottrai") {
+    div.className = "zero";
+    }
 }
 
 function CambiaStile(sheet) {
@@ -65,7 +62,7 @@ function mySwitch(div) {
   else if (className=="edilizia") {
     div.className = "standard";
     }
-  audioCampo.play();
+  //audioCampo.play();
 }
 
 function mysel(div) {
@@ -77,7 +74,7 @@ function mysel(div) {
     else if (className=="largo_nero") {
        div.className = "largo";
        }
-    audioCampo.play();
+    //audioCampo.play();
     }
 }
 function myfunc2(div) {
@@ -122,5 +119,5 @@ function myfunc2(div) {
       div.className = "spazio";
       }
   }
-  audioCampo.play();
+  //audioCampo.play();
 }
