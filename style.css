@@ -19,6 +19,8 @@ body {
     font-family: 'PT Sans', Sans-Serif;
     font-size: 150px;
     cursor: default;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .trasparente {
@@ -30,6 +32,8 @@ body {
     font-size: 150px;
     cursor: default;
     opacity: 0;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 
@@ -122,12 +126,12 @@ table#t01 td {
 }
 
 .spazio {
-    background-color: #00C200;
+    background-color: #333333;
 }
 
 .stalla {
     background-color: #065535;
-    background-image: radial-gradient(#000000, #000000, #00C200, #00C200, #00C200, #00C200, #00C200, #00C200, #00C200, #00C200);
+    background-image: radial-gradient(#ffffff, #ffffff, #333333, #333333, #333333, #333333, #333333, #333333, #333333, #333333);
 }
 
 .stanza {
