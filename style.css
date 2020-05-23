@@ -49,7 +49,7 @@ body {
   background-color: #00C200; color: #000000;
 }
 
-pecora, #cinghiale, #bestiame {
+#pecora, #cinghiale, #bestiame {
     background-color: #4285F4;
     color: white;
 }
