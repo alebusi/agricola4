@@ -11,47 +11,60 @@ body {
     margin: 0 auto;
 }
 
-.risorsa, .trasparente {
+.risorsa {
     display: inline-block;
-    width: 16vw;
-    padding: 1vh 0;
-    margin: 3vw;
+    width: 22vw;
+    padding: 3vh 0;
     text-align: center;
     font-family: 'PT Sans', Sans-Serif;
-    font-weight: 700;
-    font-size: 120px;
+    font-size: 150px;
     cursor: default;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .trasparente {
+    display: inline-block;
+    width: 22vw;
+    padding: 3vh 0;
+    text-align: center;
+    font-family: 'PT Sans', Sans-Serif;
+    font-size: 150px;
+    cursor: default;
     opacity: 0;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
+
 #legno {
-  background-color: #824200; color: #ffffff; 
+    color: white;
 }
+
 #argilla {
-  background-color: #C21212; color: #ffffff; 
+    color: red;
 }
-#pietra {
-  background-color: #000000; color: #ffffff; 
-}
+
 #canna {
-  background-color: #FFE1B0; 
+    color: #daa520;
 }
+
+#pietra {
+    color: #ffffff;
+}
+
 #grano {
-  background-color: #FFFF00; color: #000000; 
+  color: #FFFF00; 
 }
 #ortaggio {
-  background-color: #ffa420; color: #000000; 
+  color: #ffa420; 
 }
 #cibo {
-  background-color: #00C200; color: #000000;
+  color: #00C200;
 }
 
 #pecora, #cinghiale, #bestiame {
-    background-color: #4285F4;
-    color: white;
+    color: cyan;
 }
 
 #buttonRisorsa {
