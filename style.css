@@ -16,7 +16,7 @@ body {
     width: 22vw;
     padding: 3vh 0;
     text-align: center;
-    font-family: "San Francisco", "Arial", Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 110px;
     font-weight: bold;
     -webkit-text-stroke-width: 2px;
@@ -59,7 +59,7 @@ body {
 }
 
 #pecora, #cinghiale, #bestiame {
-    color: cyan;
+    color: #4285F4;
 }
 
 #buttonRisorsa {
