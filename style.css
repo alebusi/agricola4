@@ -8,7 +8,7 @@ body {
 }
 .wrapper {
     width: 90vw;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 
 .risorsa,.trasparente {
@@ -17,8 +17,8 @@ body {
     padding: 3vh 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 110px;
-    font-weight: bold;
+    font-size: 120px;
+    font-weight: 700;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
     cursor: default;
