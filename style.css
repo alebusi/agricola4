@@ -95,10 +95,6 @@ td {
     padding: 0;
 }
 
-table#t01 td {
-    border: 0;
-}
-
 .largo {
    height: 2vh;
    background-color: black;
@@ -118,10 +114,12 @@ table#t01 td {
 .grano_3, .grano2, .grano_1, .ortaggio2, .ortaggio1, .stanza, .stanza_argilla, .stanza_pietra, .stalla, .campo, .pascolo, .spazio {
   width: 16vh;
   height: 16vh;
+  border: solid 1px black;
 }
 
 .spazio {
-    background-color: #333333;
+    background-color: black;
+    border-bottom: solid 1px white;
 }
 
 .stalla {
@@ -131,17 +129,17 @@ table#t01 td {
 
 .stanza {
     background-color: #065535;
-    background-image: radial-gradient(#824200, #000000);
+    background-image: linear-gradient(#824200, #000000);
 }
 
 .stanza_argilla {
     background-color: #065535;
-    background-image: radial-gradient(red, #000000);
+    background-image: linear-gradient(red, #000000);
 }
 
 .stanza_pietra {
     background-color: #065535;
-    background-image: radial-gradient(grey, #000000);
+    background-image: linear-gradient(grey, #000000);
 }
 
 .campo {
