@@ -124,7 +124,7 @@ td {
 
 .stalla {
     background-color: #065535;
-    background-image: radial-gradient(#ffffff, #ffffff, #333333, #333333, #333333, #333333, #333333, #333333, #333333, #333333);
+    background-image: radial-gradient(#ffffff, #ffffff, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
 }
 
 .stanza {
