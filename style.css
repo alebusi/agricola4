@@ -114,12 +114,10 @@ td {
 .grano_3, .grano2, .grano_1, .ortaggio2, .ortaggio1, .stanza, .stanza_argilla, .stanza_pietra, .stalla, .campo, .pascolo, .spazio {
   width: 16vh;
   height: 16vh;
-  border: solid 1px black;
 }
 
 .spazio {
     background-color: black;
-    border-bottom: solid 1px white;
 }
 
 .stalla {
