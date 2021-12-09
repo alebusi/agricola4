@@ -113,7 +113,7 @@ td {
 
 .grano_3, .grano2, .grano_1, .ortaggio2, .ortaggio1, .stanza, .stanza_argilla, .stanza_pietra, .stalla, .campo, .pascolo, .spazio {
   width: 16vh;
-  height: 16vh;
+  height: 8vh;
 }
 
 .spazio {
@@ -147,12 +147,12 @@ td {
 .pascolo {
     background-color: #00C200;
 }
-
+/*
 .grano_3 {
     background-color: #065535;
     background-image: radial-gradient(#FFFF00, #FFFF00, #FFFF00, #FFFF00, #FFFF00, #FFFF00, #065535, #065535, #065535, #065535);
 }
-
+*/
 .grano_2 {
     background-color: #065535;
     background-image: radial-gradient(#FFFF00, #FFFF00, #FFFF00, #FFFF00, #065535, #065535, #065535, #065535, #065535, #065535);
@@ -192,4 +192,14 @@ td {
 
 .edilizia {
     background-color: orange;
+}
+.grano3 .i1 {
+    d: path("M 0 0 h60 v30 h-60 z");
+    fill: brown;
+}
+.grano3 .i2 {
+    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M31 15 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+    fill: yellow;
+    stroke-width: 1;
+    stroke: black;
 }
