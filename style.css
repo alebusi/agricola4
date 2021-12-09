@@ -193,11 +193,11 @@ td {
 .edilizia {
     background-color: orange;
 }
-.grano3 .i1 {
+.grano_3 .i1 {
     d: path("M 0 0 h60 v30 h-60 z");
     fill: brown;
 }
-.grano3 .i2 {
+.grano_3 .i2 {
     d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M31 15 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
     fill: yellow;
     stroke-width: 1;
