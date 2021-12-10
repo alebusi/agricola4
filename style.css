@@ -147,31 +147,6 @@ td {
 .pascolo {
     background-color: #00C200;
 }
-/*
-.grano_3 {
-    background-color: #065535;
-    background-image: radial-gradient(#FFFF00, #FFFF00, #FFFF00, #FFFF00, #FFFF00, #FFFF00, #065535, #065535, #065535, #065535);
-}
-*/
-.grano_2 {
-    background-color: #065535;
-    background-image: radial-gradient(#FFFF00, #FFFF00, #FFFF00, #FFFF00, #065535, #065535, #065535, #065535, #065535, #065535);
-}
-
-.grano_1 {
-    background-color: #065535;
-    background-image: radial-gradient(#FFFF00, #FFFF00, #065535, #065535, #065535, #065535, #065535, #065535, #065535, #065535);
-}
-
-.ortaggio_2 {
-    background-color: #065535;
-    background-image: radial-gradient(#fa8072, #fa8072, #fa8072, #fa8072, #065535, #065535, #065535, #065535, #065535, #065535);
-}
-
-.ortaggio_1 {
-    background-color: #065535;
-    background-image: radial-gradient(#fa8072, #fa8072, #065535, #065535, #065535, #065535, #065535, #065535, #065535, #065535);
-}
 
 #controllo {
     position: absolute;
@@ -193,13 +168,41 @@ td {
 .edilizia {
     background-color: orange;
 }
-.grano_3 .i1 {
+.grano_1, grano_2, grano_3, ortaggio_1, ortaggio_2 .i1 {
     d: path("M 0 0 h60 v30 h-60 z");
     fill: brown;
 }
 .grano_3 .i2 {
     d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M31 15 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
     fill: yellow;
+    stroke-width: 1;
+    stroke: black;
+}
+
+.grano_2 .i2 {
+    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+    fill: yellow;
+    stroke-width: 1;
+    stroke: black;
+}
+
+.grano_1 .i2 {
+    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+    fill: yellow;
+    stroke-width: 1;
+    stroke: black;
+}
+
+.ortaggio_2 .i2 {
+    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+    fill: darkorange;
+    stroke-width: 1;
+    stroke: black;
+}
+
+.ortaggio_1 .i2 {
+    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+    fill: darkorange;
     stroke-width: 1;
     stroke: black;
 }
