@@ -82,21 +82,27 @@ function myfunc2(div) {
   if (document.getElementById("controllo").className=="standard") { 
     if (className=="spazio") {
       div.className = "campo";
+      div.innerHTML = "";
       }
     else if (className=="campo") {
-      div.className = "grano_3";
+      div.className = "grano_3";      
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M26 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4m30 5 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4m-21 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4" /></svg>';
       }
     else if (className=="grano_3") {
       div.className = "grano_2";
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M26 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4m30 5 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4 " /></svg>';
       }
     else if (className=="grano_2") {
       div.className = "grano_1";
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M26 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4" /></svg>';
       }
     else if (className=="grano_1") {
       div.className = "ortaggio_2";
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M26 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4m30 5 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4 " /></svg>';
       }
     else if (className=="ortaggio_2") {
       div.className = "ortaggio_1";
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M26 4 q9 0 9 6 t-9 6 t-9 -6 t9 -6 z m9 6 v4 q0 6 -9 6 t-9 -6 v-4" /></svg>';
       }
     else if (className=="ortaggio_1") {
       div.className = "spazio";
