@@ -168,40 +168,18 @@ td {
 .edilizia {
     background-color: orange;
 }
-.grano_1, .grano_2, .grano_3, .ortaggio_1, .ortaggio_2 .i1 {
-    d: path("M 0 0 h60 v30 h-60 z");
+
+.grano_3 .i1, .grano_2 .i1, .grano_1 .i1, .ortaggio_1 .i1, .ortaggio_2 .i1 {
     fill: brown;
 }
-.grano_3 .i2 {
-    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M31 15 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+
+.grano_3, .grano_2, .grano_1 .i2 {
     fill: yellow;
     stroke-width: 1;
     stroke: black;
 }
 
-.grano_2 .i2 {
-    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
-    fill: yellow;
-    stroke-width: 1;
-    stroke: black;
-}
-
-.grano_1 .i2 {
-    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
-    fill: yellow;
-    stroke-width: 1;
-    stroke: black;
-}
-
-.ortaggio_2 .i2 {
-    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z M37 0 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
-    fill: darkorange;
-    stroke-width: 1;
-    stroke: black;
-}
-
-.ortaggio_1 .i2 {
-    d: path("M12 6 m0 5 v4 q0 5 10 5 t10 -5 v-4 q0 5 -10 5 t-10 -5 zm10 -5 q10 0 10 5 t-10 5 t-10 -5 t10 -5 z ");
+.ortaggio_1, .ortaggio_2 .i2 {
     fill: darkorange;
     stroke-width: 1;
     stroke: black;
