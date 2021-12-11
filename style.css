@@ -168,7 +168,7 @@ td {
 .edilizia {
     background-color: orange;
 }
-.grano_1, grano_2, grano_3, ortaggio_1, ortaggio_2 .i1 {
+.grano_1, .grano_2, .grano_3, .ortaggio_1, .ortaggio_2 .i1 {
     d: path("M 0 0 h60 v30 h-60 z");
     fill: brown;
 }
