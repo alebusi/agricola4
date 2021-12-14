@@ -169,8 +169,13 @@ td {
     background-color: orange;
 }
 
-.grano_3 .i1, .grano_2 .i1, .grano_1 .i1, .ortaggio_1 .i1, .ortaggio_2 .i1 {
-    fill: brown;
+.campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
+    stroke-width: 1;
+    stroke: black;
+}
+
+.campo .i1, .grano_3 .i1, .grano_2 .i1, .grano_1 .i1, .ortaggio_1 .i1, .ortaggio_2 .i1 {
+    fill: maroon;
 }
 
 .grano_3, .grano_2, .grano_1 .i2 {
