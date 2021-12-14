@@ -4,6 +4,10 @@ var secondi = 0;
 var svg = '<svg viewBox="0 0 66 44">';
 var campo = '<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i3" d="M9 6 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4" />';
 
+var stanza=svg+'<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M9 6 h48 v32 h-48 z "/> <path class="i3" d="M9 6 h48 v8 h-48 z m24 16 m0 8 h16 v4 h-16 z m-10 -8 h6 v4 h-6 z m0 8 h6 v4 h-6 z"/> <path class="i4" d="M33 18 h16 v12 h-16 z m0 12 m-10 -8h6 v-4 h-6 z m0 8 h6 v-4 h-6 z " /></svg>'; 
+document.getElementById("stanza1").innerHTML=stanza;
+document.getElementById("stanza2").innerHTML=stanza;
+
 //var audioCampo = new Audio('campo.mp3');
 //var suona = new Audio('success.wav');
 //var audioTogli = new Audio('togli.mp3');
@@ -73,9 +77,17 @@ function mysel(div) {
   if (document.getElementById("controllo").className=="steccati") {
     if (className=="largo") {
        div.className = "largo_nero";
+       div.innerHTML = '<svg viewBox="0 0 66 11"> <path class="i1" d="M 0 0 h66 v11 h-66 z "/> <path class="i2" d="M0 7 h66 v4 h-66 z " /></svg>';
        }
     else if (className=="largo_nero") {
        div.className = "largo";
+       }
+    else if (className=="alto") {
+       div.className = "alto_nero";
+       div.innerHTML = '<svg viewBox="0 0 11 44"> <path class="i1" d="M 0 0 h11 v44 h-11 z "/> <path class="i2" d="M0 40 h11 v4 h-11 z " /></svg>';
+       }
+    else if (className=="alto_nero") {
+       div.className = "alto";
        }
     //audioCampo.play();
     }
@@ -86,7 +98,6 @@ function myfunc2(div) {
     if (className=="spazio") {
       div.className = "campo";
       div.innerHTML = svg+campo+'</svg>';
-      //div.innerHTML="";
       }
     else if (className=="campo") {
       div.className = "grano_3";      
