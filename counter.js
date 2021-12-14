@@ -111,6 +111,7 @@ function myfunc2(div) {
   else if (document.getElementById("controllo").className=="edilizia") {
     if (className=="spazio") {
       div.className = "stanza";
+      div.innerHTML = '<svg viewBox="0 0 66 44"> <path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M9 6 h48 v32 h-48 z "/> <path class="i3" d="M9 6 h48 v8 h-48 z m24 16 m0 8 h16 v4 h-16 z m-10 -8 h6 v4 h-6 z m0 8 h6 v4 h-6 z"/> <path class="i2" d="M33 18 h16 v12 h-16 z m0 12 m-10 -8h6 v-4 h-6 z m0 8 h6 v-4 h-6 z " /></svg>';
       }
     else if (className=="stanza") {
       div.className = "stalla";
