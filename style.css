@@ -95,25 +95,9 @@ td {
     padding: 0;
 }
 
-.largo {
-   height: 2vh;
-   background-color: black;
-}
-
-.largo_nero {
-   height: 2vh;
-   background-color: white;
-}
-
-.stretto {
-   height: 3vh;
-   width: 3vh;
-   background-color: black;
-}
-
 .grano_3, .grano2, .grano_1, .ortaggio2, .ortaggio1, .stanza, .stanza_argilla, .stanza_pietra, .stalla, .campo, .pascolo, .spazio {
-  width: 16vh;
-  height: 8vh;
+  width: 150px;
+  height: 100px;
 }
 
 .spazio {
@@ -145,6 +129,31 @@ td {
     background-color: orange;
 }
 
+.stretto {
+   height: 25px;
+   width: 25px;
+   background-color: black;
+}
+
+.largo, .alto {
+   /*height: 25px;*/
+   /*background-color: black;*/
+   opacity: 0;
+}
+
+.largo_nero, .alto_nero {
+   opacity: 1;
+}
+
+.largo_nero .i1, .alto_nero .i1 {
+   fill: SeaGreen;
+}
+
+.largo_nero .i2, .alto_nero .i2 {
+   fill: black;
+   opacity: 0.3;
+}
+
 .stalla .i1 {
     fill: SeaGreen;
     stroke-width: 1;
@@ -154,26 +163,22 @@ td {
 .stanza .i1 {
     fill: #824200;
 }
-.stanza .i2 {
-  fill: #9C661F;
+.stanza .i2, .stanza_argilla .i2, .stanza_pietra .i2 {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .stanza_argilla .i1 {
-  fill: red;
-}
-.stanza_argilla .i2 {
-  fill: #ff4040;
+  fill: #b22222;
 }
 
 .stanza_pietra .i1 {
   fill: #2F4F4F;
 }
-.stanza_pietra .i2 {
-  fill: #8E8E8E;
-}
 
 .stanza .i3, .stanza_argilla .i3, .stanza_pietra .i3 {
-  fill: #696969;
+  fill: #000000;
+  opacity: 0.6;
 }
 .stanza .i4, .stanza_argilla .i4, .stanza_pietra .i4 {
     fill: #824200;
