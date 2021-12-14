@@ -120,30 +120,6 @@ td {
     background-color: black;
 }
 
-.stalla {
-    background-color: #065535;
-    background-image: radial-gradient(#ffffff, #ffffff, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
-}
-
-.stanza {
-    background-color: #065535;
-    background-image: linear-gradient(#824200, #000000);
-}
-
-.stanza_argilla {
-    background-color: #065535;
-    background-image: linear-gradient(red, #000000);
-}
-
-.stanza_pietra {
-    background-color: #065535;
-    background-image: linear-gradient(grey, #000000);
-}
-
-.campo {
-    background-color: #065535;
-}
-
 .pascolo {
     background-color: #00C200;
 }
@@ -167,6 +143,40 @@ td {
 
 .edilizia {
     background-color: orange;
+}
+
+.stalla .i1 {
+    fill: SeaGreen;
+    stroke-width: 1;
+    stroke: white;
+}
+
+.stanza .i1 {
+    fill: #824200;
+}
+.stanza .i2 {
+  fill: #9C661F;
+}
+
+.stanza_argilla .i1 {
+  fill: red;
+}
+.stanza_argilla .i2 {
+  fill: #ff4040;
+}
+
+.stanza_pietra .i1 {
+  fill: #2F4F4F;
+}
+.stanza_pietra .i2 {
+  fill: #8E8E8E;
+}
+
+.stanza .i3, .stanza_argilla .i3, .stanza_pietra .i3 {
+  fill: #696969;
+}
+.stanza .i4, .stanza_argilla .i4, .stanza_pietra .i4 {
+    fill: #824200;
 }
 
 .campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
