@@ -183,6 +183,11 @@ td {
 .stanza .i4, .stanza_argilla .i4, .stanza_pietra .i4 {
     fill: #824200;
 }
+.stanza .i5, .stanza_argilla .i5, .stanza_pietra .i5 {
+    fill: transparent;
+    stroke-width: 1;
+    stroke: white;
+}
 
 .campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
     stroke-width: 1;
