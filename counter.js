@@ -4,7 +4,7 @@ var secondi = 0;
 var svg = '<svg viewBox="0 0 66 44">';
 var campo = '<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i3" d="M9 6 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4 h48 m-48 4" />';
 
-var stanza=svg+'<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M9 6 h48 v32 h-48 z "/> <path class="i3" d="M9 6 h48 v8 h-48 z m24 16 m0 8 h16 v4 h-16 z m-10 -8 h6 v4 h-6 z m0 8 h6 v4 h-6 z"/> <path class="i4" d="M33 18 h16 v12 h-16 z m0 12 m-10 -8h6 v-4 h-6 z m0 8 h6 v-4 h-6 z " /></svg>'; 
+var stanza=svg+'<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M9 6 h48 v32 h-48 z "/> <path class="i3" d="M9 6 h48 v8 h-48 z m24 16 m0 8 h16 v4 h-16 z m-10 -8 h6 v4 h-6 z m0 8 h6 v4 h-6 z"/> <path class="i4" d="M33 18 h16 v12 h-16 z m0 12 m-10 -8h6 v-4 h-6 z m0 8 h6 v-4 h-6 z "/> <path class="i5" d="M9 6 h48 v32 h-48 z " /></svg>'; 
 document.getElementById("stanza1").innerHTML=stanza;
 document.getElementById("stanza2").innerHTML=stanza;
 
@@ -130,7 +130,7 @@ function myfunc2(div) {
       }
     else if (className=="stalla") {
       div.className = "stanza";
-      div.innerHTML = svg+'<path class="i1" d="M 0 0 h66 v44 h-66 z "/> <path class="i2" d="M9 6 h48 v32 h-48 z "/> <path class="i3" d="M9 6 h48 v8 h-48 z m24 16 m0 8 h16 v4 h-16 z m-10 -8 h6 v4 h-6 z m0 8 h6 v4 h-6 z"/> <path class="i4" d="M33 18 h16 v12 h-16 z m0 12 m-10 -8h6 v-4 h-6 z m0 8 h6 v-4 h-6 z " /></svg>';      
+      div.innerHTML = svg+stanza;      
       } 
     else if (className=="stanza") {
       div.className = "stanza_argilla";
