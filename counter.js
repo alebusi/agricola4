@@ -13,21 +13,21 @@ document.getElementById("stanza2").innerHTML=stanza;
 //var audioTogli = new Audio('togli.mp3');
 
 function myfunc(id,i,ind) {
-  if (document.getElementById("buttonRisorsa").className == "zero")
+  if (document.getElementById("buttonRisorsa").className == "standard")
     {
     document.getElementById(id).className = "trasparente";
     tess[ind]=0;
     document.getElementById(id).innerHTML = tess[ind];
     //audioTogli.play();
     }
-  else if (document.getElementById("buttonRisorsa").className == "somma")
+  else if (document.getElementById("buttonRisorsa").className == "steccati")
     {
     document.getElementById(id).className = "risorsa";
     tess[ind]+=1;
     document.getElementById(id).innerHTML = tess[ind];
     //suona.play();
     }
-  else if (document.getElementById("buttonRisorsa").className == "sottrai")
+  else if (document.getElementById("buttonRisorsa").className == "edilizia")
     {
     document.getElementById(id).className = "risorsa";
     tess[ind]-=1;
