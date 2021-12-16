@@ -7,17 +7,22 @@
 </head>
 <body>
 <div
-   class="wrapper">  
-     <div id="legno" class="trasparente" onclick="myfunc('legno', 1, 0)">0</div>
-     <div id="argilla" class="trasparente" onclick="myfunc('argilla', 1, 1)">0</div> 
-     <div id="canna" class="trasparente" onclick="myfunc('canna', 1, 2)">0</div>
-     <div id="pietra" class="trasparente" onclick="myfunc('pietra', 1, 3)">0</div>
-     <div id="cibo" class="risorsa" onclick="myfunc('cibo', 1, 6)">0</div> 
-     <div id="grano" class="trasparente" onclick="myfunc('grano', 1, 4)">0</div> 
-     <div id="ortaggio" class="trasparente" onclick="myfunc('ortaggio', 1, 5)">0</div> 
-     <div id="pecora" class="trasparente" onclick="myfunc('pecora', 1, 7)">0</div>
-     <div id="cinghiale" class="trasparente" onclick="myfunc('cinghiale', 1, 8)">0</div>
-     <div id="bestiame" class="trasparente" onclick="myfunc('bestiame', 1, 9)">0</div>
+  class="wrapper">  
+  <table id="t00">
+  <tr>
+      <td><div id="legno" class="trasparente" onclick="myfunc('legno', 1, 0)">0</div></td>
+      <td><div id="argilla" class="trasparente" onclick="myfunc('argilla',1,1)">-</div></td>
+      <td><div id="canna" class="trasparente" onclick="myfunc('canna',1,3)">-</div></td>
+      <td><div id="pietra" class="trasparente" onclick="myfunc('pietra',1,2)">-</div></td>
+      <td><div id="cibo" class="risorsa" onclick="myfunc('cibo',1,6)">0</div></td>
+  </tr>
+  <tr><td><div id="grano" class="trasparente" onclick="myfunc('grano',1,4)">0</div></td>
+      <td><div id="ortaggio" class="trasparente" onclick="myfunc('ortaggio',1,5)">0</div></td>
+      <td><div id="pecora" class="trasparente" onclick="myfunc('pecora',1,7)">0</div></td>
+      <td><div id="cinghiale" class="trasparente" onclick="myfunc('cinghiale',1,8)">0</div></td>
+      <td><div id="bestiame" class="trasparente" onclick="myfunc('bestiame',1,9)">0</div></td>
+  </tr>
+</table>
 </div>
 <div class="tabellone">
  <table id="t01" style="margin-left:auto; margin-right:auto;">
