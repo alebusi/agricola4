@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  /*overflow: hidden;*/
+  overflow: hidden;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10+ and Edge */
   user-select: none; /* Standard syntax */
@@ -8,13 +8,13 @@ body {
 }
 .wrapper {
     width: 902px;
-    margin: 40px auto 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 .risorsa,.trasparente {
     display: inline-block;
     width: 150px;
-    padding: 30px 0;
+    padding: 10px 0;
     margin-left: 25px;
     margin-bottom: 25px;
     text-align: center;
@@ -71,7 +71,7 @@ body {
 }
 
 .tabellone {
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 902px;
@@ -100,11 +100,9 @@ td {
 
 #controllo {
     position: absolute;
-    width: 5vw;
-    height: 5vw;
+    width: 50px;
+    height: 50px;
     margin-left: 90vw;
-    /*margin-bottom: 6vw;*/
-    /*border: solid 1vh red;*/
 }
 
 .standard {
