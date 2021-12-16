@@ -19,20 +19,13 @@ body {
     margin-bottom: 25px;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 80px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    font-size: 100px;
     cursor: default;
-    /*
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    */
 }
 
 .trasparente {
     opacity: 0;
 }
-
 
 #legno {
   background-color: #824200; color: #ffffff; 
