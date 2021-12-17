@@ -147,12 +147,9 @@ td {
     stroke: white;
 }
 
+/*--------- STANZE --------*/
 .stanza .i1 {
     fill: #824200;
-}
-.stanza .i2, .stanza_argilla .i2, .stanza_pietra .i2 {
-  fill: #ffffff;
-  opacity: 0.3;
 }
 
 .stanza_argilla .i1 {
@@ -161,6 +158,11 @@ td {
 
 .stanza_pietra .i1 {
   fill: #2F4F4F;
+}
+
+.stanza .i2, .stanza_argilla .i2, .stanza_pietra .i2 {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .stanza .i3, .stanza_argilla .i3, .stanza_pietra .i3 {
@@ -176,23 +178,25 @@ td {
     stroke: white;
 }
 
-.campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
-    stroke-width: 1;
-    stroke: black;
-}
+/* --------- grani e ortaggi --------- */
 
 .campo .i1, .grano_3 .i1, .grano_2 .i1, .grano_1 .i1, .ortaggio_1 .i1, .ortaggio_2 .i1 {
     fill: #1B5B41;
 }
 
-.grano_3, .grano_2, .grano_1 .i2 {
+.grano_3 .i2, .grano_2 .i2, .grano_1 .i2 {
     fill: #FFFF00;
     stroke-width: 1;
     stroke: white;
 }
 
-.ortaggio_1, .ortaggio_2 .i2 {
+.ortaggio_1 .i2, .ortaggio_2 .i2 {
     fill: darkorange;
     stroke-width: 1;
     stroke: white;
+}
+
+.campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
+    stroke-width: 1;
+    stroke: black;
 }
