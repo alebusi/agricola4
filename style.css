@@ -187,13 +187,13 @@ td {
 .grano_3 .i2, .grano_2 .i2, .grano_1 .i2 {
     fill: #FFFF00;
     stroke-width: 1;
-    stroke: white;
+    stroke: black;
 }
 
 .ortaggio_1 .i2, .ortaggio_2 .i2 {
     fill: darkorange;
     stroke-width: 1;
-    stroke: white;
+    stroke: black;
 }
 
 .campo .i3, .grano_3 .i3, .grano_2 .i3, .grano_1 .i3, .ortaggio_1 .i3, .ortaggio_2 .i3 {
